@@ -1,12 +1,12 @@
 import React, { useContext, useId, useState } from 'react'
 import {  useItem } from '../../context/Context'
 
-function ShopItem(product) {
+function ShopItem({product}) {
   const {addToCart} = useItem()
   return (
     <div className="p-4 border rounded shadow-md mb-4">
       <div className="mb-2">
-        <div className="text-lg font-bold">{product.produtName}</div>
+        <div className="text-lg font-bold">{product.productName}</div>
       </div>
       <div className="mb-2">
         <div className="text-gray-700">${product.price}</div>

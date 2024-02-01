@@ -1,21 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <>
-    <div className='flrx flex-row justify-between'>
+    <div className="flex items-center justify-between p-4 bg-blue-500 text-white">
       <div>
-      <Link to={"/shop"}>Shop</Link>
+        <Link to="/shop" className="text-lg font-bold">Shop</Link>
       </div>
       <div>
-        <Link to={"/cart"}>Cart</Link>
+        <Link to="/cart" className="text-lg font-bold">Cart</Link>
       </div>
     </div>
-    
-    </>
-    
-  )
+  );
 }
 
-export default Header
+export default Header;
+
